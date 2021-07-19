@@ -2,11 +2,13 @@
   "kind": "singleType",
   "collectionName": "homepages",
   "info": {
-    "name": "Homepage"
+    "name": "Homepage",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "seo": {
@@ -19,6 +21,18 @@
       "repeatable": false,
       "component": "sections.hero",
       "required": true
+    },
+    "are_you_zen": {
+      "type": "text"
+    },
+    "what_we_do": {
+      "type": "text"
+    },
+    "who_we_are": {
+      "type": "text"
+    },
+    "our_philosophy": {
+      "type": "text"
     }
   }
 }

@@ -16,10 +16,6 @@
       "type": "string",
       "required": true
     },
-    "description": {
-      "type": "text",
-      "required": true
-    },
     "content": {
       "type": "richtext",
       "required": true
@@ -29,9 +25,10 @@
       "targetField": "title",
       "required": true
     },
-    "category": {
-      "model": "category",
-      "via": "articles"
+    "categories": {
+      "collection": "category",
+      "via": "articles",
+      "dominant": true
     },
     "image": {
       "model": "file",
@@ -48,6 +45,21 @@
     "author": {
       "via": "articles",
       "model": "writer"
+    },
+    "card_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "string"
     }
   }
 }
