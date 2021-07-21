@@ -11,17 +11,6 @@
     "draftAndPublish": false
   },
   "attributes": {
-    "seo": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.seo"
-    },
-    "hero": {
-      "type": "component",
-      "repeatable": false,
-      "component": "sections.hero",
-      "required": true
-    },
     "are_you_zen": {
       "type": "text"
     },
