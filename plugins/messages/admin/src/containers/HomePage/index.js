@@ -19,7 +19,7 @@ const HomePage = () => {
         <ListHeader title='list title' subtitle='subtitle' />
         {[1, 2, 4, 5].map(i => (
           <List key={i}>
-            <MessageItem isNotOpened={i === 1} email="asdas@mail.com" message='asdasdasdasd' name='Mukut Brahma' />
+            <MessageItem isUnread={i === 1} email="asdas@mail.com" message='asdasdasdasd' name='Mukut Brahma' />
           </List>
         ))}
       </ListWrapper>

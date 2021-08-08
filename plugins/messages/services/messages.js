@@ -1,5 +1,7 @@
 'use strict';
 
+const pluginId = require("../admin/src/pluginId");
+
 /**
  * messages.js service
  *
@@ -7,5 +9,7 @@
  */
 
 module.exports = {
-
+    createNewMessage: async (data) => {
+        return await strapi.query('message', pluginId).create(data);
+    }
 };

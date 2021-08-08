@@ -21,7 +21,7 @@ const Message = styled.div`
 `
 
 function MessageItem(props) {
-    const style = { fontWeight: props.isNotOpened ? 'bold' : 'normal' };
+    const style = { fontWeight: props.isUnread ? 'bold' : 'normal' };
     return (
         <Container>
             <Text style={style}>{props.name}</Text>
@@ -35,7 +35,7 @@ MessageItem.propTypes = {
     name: PropTypes.string.isRequired,
     email: PropTypes.string.isRequired,
     message: PropTypes.string.isRequired,
-    isNotOpened: PropTypes.bool
+    isUnread: PropTypes.bool
 };
 
 export default memo(MessageItem);
