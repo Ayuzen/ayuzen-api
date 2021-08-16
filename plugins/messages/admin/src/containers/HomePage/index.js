@@ -12,11 +12,11 @@ import MessageItem from '../../components/MessageItem';
 import pluginId from '../../pluginId';
 
 const HomePage = () => {
+  return null
   return (
     <div className="container-fluid" style={{ padding: "18px 30px" }}>
-      <PluginHeader title='All messages' />
+      <PluginHeader title='Unread Messages' />
       <ListWrapper>
-        <ListHeader title='list title' subtitle='subtitle' />
         {[1, 2, 4, 5].map(i => (
           <List key={i}>
             <MessageItem isUnread={i === 1} email="asdas@mail.com" message='asdasdasdasd' name='Mukut Brahma' />
