@@ -48,6 +48,10 @@
     },
     "amenities": {
       "collection": "amenity"
+    },
+    "note": {
+      "type": "text",
+      "private": true
     }
   }
 }
