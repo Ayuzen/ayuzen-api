@@ -65,6 +65,10 @@
       "type": "integer",
       "max": 5,
       "min": 0
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }
