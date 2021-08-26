@@ -1,3 +1,5 @@
+const { sanitizeEntity } = require('strapi-utils');
+
 'use strict';
 
 /**
@@ -5,4 +7,12 @@
  * to customize this controller
  */
 
-module.exports = {};
+module.exports = {
+
+    async findOne(ctx) {
+        const { slug } = ctx.params;
+
+        const entity = await strapi.services.stay.findOne({ slug });
+        return sanitizeEntity(entity, { model: strapi.models.stay });
+    },
+};
