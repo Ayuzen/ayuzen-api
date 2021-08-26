@@ -52,6 +52,19 @@
     "note": {
       "type": "text",
       "private": true
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "stay.address"
+    },
+    "starting_price": {
+      "type": "decimal"
+    },
+    "ayuzen_rating": {
+      "type": "integer",
+      "max": 5,
+      "min": 0
     }
   }
 }

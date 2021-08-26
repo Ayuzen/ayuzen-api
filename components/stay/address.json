@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_stay_addresses",
+  "info": {
+    "name": "Address",
+    "icon": "map-marker-alt"
+  },
+  "options": {},
+  "attributes": {
+    "state": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "address": {
+      "type": "text"
+    },
+    "Location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.location"
+    }
+  }
+}
