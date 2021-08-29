@@ -22,6 +22,9 @@
     },
     "our_philosophy": {
       "type": "text"
+    },
+    "featured_stays": {
+      "collection": "stay"
     }
   }
 }
