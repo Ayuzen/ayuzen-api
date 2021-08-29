@@ -21,7 +21,7 @@ const Message = styled.div`
 `
 
 function MessageItem(props) {
-    const style = { fontWeight: props.isUnread ? 'bold' : 'normal' };
+    const style = { fontWeight: props.isUnread ? 'normal' : 'normal' };
     return (
         <Container onClick={props.handleClick}>
             <Text style={style}>{props.date}</Text>

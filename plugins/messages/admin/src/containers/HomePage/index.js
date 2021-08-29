@@ -16,7 +16,7 @@ import dayjs from 'dayjs';
 
 
 const HomePage = () => {
-  const { messages, loading } = useMessages();
+  const { messages, loading, markRead } = useMessages();
   const [open, setOpen] = useState(null);
 
   const closeDialog = () => setOpen(null);
@@ -24,9 +24,12 @@ const HomePage = () => {
     setOpen(data)
   }
 
-  const handleMarkRead = (message) => () => {
-
+  const handleMarkRead = (message) => async () => {
+    await markRead(message.id)
+    closeDialog();
   }
+
+  const unreadMessages = messages.filter(m => m.isUnread)
 
 
   return (
@@ -35,7 +38,7 @@ const HomePage = () => {
       <PluginHeader title='Unread Messages' />
       {loading ? <p>Loading...</p> :
         <ListWrapper>
-          {messages.filter(m => m.isUnread).map((m, i) => (
+          {unreadMessages.map((m, i) => (
             <List key={i}>
               <MessageItem
                 handleClick={openDialog(m)}
@@ -49,6 +52,7 @@ const HomePage = () => {
           ))}
         </ListWrapper>
       }
+      {unreadMessages.length ? null : <h2>No unread messages</h2>}
       {open ?
         <MessageDialog
           open={!!open}

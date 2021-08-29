@@ -24,6 +24,16 @@ module.exports = {
     ctx.send(res);
   },
 
+  markRead: async (ctx) => {
+    const { id } = ctx.request.body;
+    if (!id) {
+      ctx.throw(406, 'id is required')
+    }
+    const messageService = strapi.plugins[pluginId].services['messages'];
+    const res = await messageService.markRead(id);
+    ctx.send(res);
+  },
+
   create: async (ctx) => {
     // Add your own logic here.
     const { name, message, email, isUnread = true } = ctx.request.body;

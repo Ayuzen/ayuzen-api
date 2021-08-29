@@ -9,6 +9,9 @@ const pluginId = require("../admin/src/pluginId");
  */
 
 module.exports = {
+    markRead: async (id) => {
+        return await strapi.query('message', pluginId).update({ id }, { isUnread: false });
+    },
     findAll: async () => {
         return await strapi.query('message', pluginId).find({});
     },

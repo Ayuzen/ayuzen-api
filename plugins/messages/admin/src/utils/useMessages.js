@@ -11,12 +11,26 @@ function useMessages() {
         setLoading(true);
         request(`/${pluginId}`).then(res => {
             setMessages(res);
-            console.log("res", res)
             setLoading(false);
         }).catch(err => setLoading(false));
     }, []);
 
-    return { messages, loading }
+
+    const markRead = async (id) => {
+        try {
+            await request(`/${pluginId}/mark-read`, {
+                method: 'POST',
+                body: {
+                    id
+                }
+            })
+            setMessages(messages.map(m => m.id === id ? ({ ...m, isUnread: false }) : m));
+        } catch (error) {
+
+        }
+    }
+
+    return { messages, loading, markRead }
 }
 
 export default useMessages;

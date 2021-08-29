@@ -13,6 +13,16 @@
       "path": "/",
       "handler": "messages.create",
       "config": {
+        "policies": [
+          "global::rate-limit"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mark-read",
+      "handler": "messages.markRead",
+      "config": {
         "policies": []
       }
     }
