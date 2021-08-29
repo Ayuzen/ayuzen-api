@@ -18,11 +18,10 @@ module.exports = {
 
   index: async (ctx) => {
     // Add your own logic here.
-
+    const messageService = strapi.plugins[pluginId].services['messages'];
+    const res = await messageService.findAll();
     // Send 200 `ok`
-    ctx.send({
-      message: 'ok'
-    });
+    ctx.send(res);
   },
 
   create: async (ctx) => {

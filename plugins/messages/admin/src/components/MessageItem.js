@@ -23,7 +23,8 @@ const Message = styled.div`
 function MessageItem(props) {
     const style = { fontWeight: props.isUnread ? 'bold' : 'normal' };
     return (
-        <Container>
+        <Container onClick={props.handleClick}>
+            <Text style={style}>{props.date}</Text>
             <Text style={style}>{props.name}</Text>
             <Text style={style}>{props.email}</Text>
             <Message style={style}>{props.message}</Message>
@@ -34,8 +35,10 @@ function MessageItem(props) {
 MessageItem.propTypes = {
     name: PropTypes.string.isRequired,
     email: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
     message: PropTypes.string.isRequired,
-    isUnread: PropTypes.bool
+    isUnread: PropTypes.bool,
+    handleClick: PropTypes.func
 };
 
 export default memo(MessageItem);

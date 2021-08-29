@@ -4,7 +4,7 @@
   "description": "This is the description of the plugin.",
   "strapi": {
     "name": "Messages",
-    "icon": "plug",
+    "icon": "envelope",
     "description": "Description of messages plugin."
   },
   "dependencies": {},

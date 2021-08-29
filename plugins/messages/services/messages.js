@@ -9,6 +9,9 @@ const pluginId = require("../admin/src/pluginId");
  */
 
 module.exports = {
+    findAll: async () => {
+        return await strapi.query('message', pluginId).find({});
+    },
     createNewMessage: async (data) => {
         return await strapi.query('message', pluginId).create(data);
     }
