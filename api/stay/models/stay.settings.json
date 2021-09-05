@@ -70,6 +70,11 @@
       "type": "uid",
       "targetField": "name",
       "required": true
+    },
+    "packages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "stay.package"
     }
   }
 }

@@ -9,8 +9,7 @@
   "attributes": {
     "state": {
       "type": "string",
-      "required": true,
-      "unique": false
+      "required": true
     },
     "address": {
       "type": "text"

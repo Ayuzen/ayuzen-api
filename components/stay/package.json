@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_stay_packages",
+  "info": {
+    "name": "Package",
+    "icon": "kaaba",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "activities": {
+      "collection": "activity"
+    },
+    "price": {
+      "min": 0,
+      "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
