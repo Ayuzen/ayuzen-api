@@ -1,9 +1,8 @@
 {
-  "collectionName": "components_stay_addresses",
+  "collectionName": "components_stay_address_v2s",
   "info": {
-    "name": "Address",
-    "icon": "map-marker-alt",
-    "description": ""
+    "name": "address_v2",
+    "icon": "map-marked"
   },
   "options": {},
   "attributes": {
@@ -11,13 +10,13 @@
       "type": "string",
       "required": true
     },
-    "address": {
-      "type": "text"
-    },
-    "Location": {
+    "location": {
       "type": "component",
       "repeatable": false,
       "component": "general.location"
+    },
+    "address": {
+      "type": "text"
     }
   }
 }
