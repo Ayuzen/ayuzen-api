@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_stay_address_v2s",
+  "collectionName": "components_general_location_addresses",
   "info": {
-    "name": "address_v2",
+    "name": "location_address",
     "icon": "map-marked"
   },
   "options": {},
@@ -10,13 +10,13 @@
       "type": "string",
       "required": true
     },
+    "long_address": {
+      "type": "text"
+    },
     "location": {
       "type": "component",
       "repeatable": false,
       "component": "general.location"
-    },
-    "address": {
-      "type": "text"
     }
   }
 }

@@ -74,7 +74,7 @@
     "stay_address": {
       "type": "component",
       "repeatable": false,
-      "component": "stay.address-v2"
+      "component": "general.location-address"
     }
   }
 }
