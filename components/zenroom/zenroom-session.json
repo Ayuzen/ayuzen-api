@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_zenroom_zenroom_sessions",
+  "info": {
+    "name": "zenroom_session",
+    "icon": "leaf",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "instructor_name": {
+      "type": "string"
+    },
+    "instructor_avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "time": {
+      "type": "datetime"
+    },
+    "day_of_week": {
+      "type": "integer"
+    },
+    "instructor_description": {
+      "type": "text"
+    }
+  }
+}

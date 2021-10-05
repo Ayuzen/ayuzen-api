@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/zen-room",
+      "handler": "zen-room.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/zen-room",
+      "handler": "zen-room.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/zen-room",
+      "handler": "zen-room.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

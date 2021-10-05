@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "zen_rooms",
+  "info": {
+    "name": "ZenRoom",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "link": {
+      "type": "string"
+    },
+    "session": {
+      "type": "component",
+      "repeatable": true,
+      "component": "zenroom.zenroom-session"
+    }
+  }
+}
