@@ -38,7 +38,7 @@
       "pluginOptions": {}
     },
     "time": {
-      "type": "datetime"
+      "type": "time"
     },
     "day_of_week": {
       "type": "integer"

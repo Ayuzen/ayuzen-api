@@ -26,6 +26,10 @@
       "type": "component",
       "repeatable": true,
       "component": "zenroom.zenroom-session"
+    },
+    "show": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
