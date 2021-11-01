@@ -8,7 +8,8 @@ const mailList = [
     "operations@ayuzen.org",
     "abhilashanand649@gmail.com",
     "roydiptopal1996@gmail.com",
-    "swap0chavan@gmail.com"
+    "swap0chavan@gmail.com",
+    "samanway1996@gmail.com"
 ]
 
 'use strict';
