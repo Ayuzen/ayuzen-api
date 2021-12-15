@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brochures",
+  "info": {
+    "name": "Brochure",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Itenerary": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.itenerary"
+    },
+    "Cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "stay": {
+      "model": "stay",
+      "via": "brochure"
+    }
+  }
+}

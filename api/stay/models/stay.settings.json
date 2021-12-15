@@ -78,6 +78,10 @@
     },
     "how_to_reach": {
       "type": "richtext"
+    },
+    "brochure": {
+      "via": "stay",
+      "model": "brochure"
     }
   }
 }

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_general_iteneraries",
+  "info": {
+    "name": "Itenerary",
+    "icon": "calendar-day"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}
