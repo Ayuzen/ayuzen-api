@@ -34,8 +34,8 @@
       "pluginOptions": {}
     },
     "stay": {
-      "model": "stay",
-      "via": "brochure"
+      "via": "brochure",
+      "model": "stay"
     }
   }
 }

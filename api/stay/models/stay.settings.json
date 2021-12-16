@@ -82,6 +82,14 @@
     "brochure": {
       "via": "stay",
       "model": "brochure"
+    },
+    "is_ayuzen_experience": {
+      "type": "boolean",
+      "default": true
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
