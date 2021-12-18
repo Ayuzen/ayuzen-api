@@ -90,6 +90,9 @@
     "is_featured": {
       "type": "boolean",
       "default": false
+    },
+    "description_2": {
+      "type": "richtext"
     }
   }
 }
