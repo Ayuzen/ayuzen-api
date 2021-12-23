@@ -79,10 +79,6 @@
     "how_to_reach": {
       "type": "richtext"
     },
-    "brochure": {
-      "via": "stay",
-      "model": "brochure"
-    },
     "is_ayuzen_experience": {
       "type": "boolean",
       "default": true
@@ -93,6 +89,17 @@
     },
     "description_2": {
       "type": "richtext"
+    },
+    "brochure": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
