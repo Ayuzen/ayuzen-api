@@ -30,10 +30,6 @@
       "type": "text",
       "private": true
     },
-    "partners": {
-      "via": "session",
-      "collection": "partner"
-    },
     "is_recurring": {
       "type": "boolean",
       "default": false
@@ -63,6 +59,10 @@
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "partners": {
+      "via": "sessions",
+      "collection": "partner"
     }
   }
 }

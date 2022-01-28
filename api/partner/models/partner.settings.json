@@ -65,9 +65,10 @@
     "blog": {
       "type": "boolean"
     },
-    "session": {
+    "sessions": {
+      "collection": "session",
       "via": "partners",
-      "model": "session"
+      "dominant": true
     },
     "slug": {
       "type": "uid",
