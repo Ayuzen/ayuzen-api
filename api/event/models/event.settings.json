@@ -12,20 +12,20 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "Description": {
+    "description": {
       "type": "text"
     },
-    "Start": {
+    "start": {
       "type": "datetime"
     },
-    "End": {
+    "end": {
       "type": "datetime"
     },
-    "Cover": {
+    "cover": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -42,8 +42,7 @@
       "collection": "stay"
     },
     "slug": {
-      "type": "uid",
-      "targetField": "Title"
+      "type": "uid"
     },
     "faqs": {
       "type": "component",
