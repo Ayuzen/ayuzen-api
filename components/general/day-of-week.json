@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_general_day_of_weeks",
+  "info": {
+    "name": "Day of week",
+    "icon": "calendar-alt"
+  },
+  "options": {},
+  "attributes": {
+    "day": {
+      "type": "integer",
+      "max": 6,
+      "min": 0
+    }
+  }
+}

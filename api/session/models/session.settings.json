@@ -30,8 +30,8 @@
       "type": "text",
       "private": true
     },
-    "partner": {
-      "model": "partner",
+    "partners": {
+      "collection": "partner",
       "via": "session"
     },
     "is_recurring": {
@@ -54,6 +54,11 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "day_of_week": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.day-of-week"
     }
   }
 }
