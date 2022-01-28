@@ -31,8 +31,8 @@
       "private": true
     },
     "partners": {
-      "collection": "partner",
-      "via": "session"
+      "via": "session",
+      "collection": "partner"
     },
     "is_recurring": {
       "type": "boolean",
@@ -59,6 +59,10 @@
       "type": "component",
       "repeatable": true,
       "component": "general.day-of-week"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }

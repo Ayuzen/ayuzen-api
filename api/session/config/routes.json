@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/sessions/:id",
+      "path": "/sessions/:slug",
       "handler": "session.findOne",
       "config": {
         "policies": []

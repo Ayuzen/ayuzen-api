@@ -68,6 +68,10 @@
     "session": {
       "via": "partners",
       "model": "session"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }
