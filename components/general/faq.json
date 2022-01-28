@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_general_faqs",
+  "info": {
+    "name": "FAQ",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "text"
+    }
+  }
+}

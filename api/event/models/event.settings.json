@@ -44,6 +44,11 @@
     "slug": {
       "type": "uid",
       "targetField": "Title"
+    },
+    "faqs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.faq"
     }
   }
 }
