@@ -51,6 +51,9 @@
     },
     "about": {
       "type": "richtext"
+    },
+    "registration_link": {
+      "type": "string"
     }
   }
 }
