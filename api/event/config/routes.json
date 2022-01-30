@@ -25,6 +25,14 @@
       }
     },
     {
+      "method": "GET",
+      "path": "/events/:slug/partners",
+      "handler": "event.findPartners",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "POST",
       "path": "/events",
       "handler": "event.create",
