@@ -42,7 +42,8 @@
       "collection": "stay"
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "title"
     },
     "faqs": {
       "type": "component",
