@@ -73,6 +73,9 @@
       "collection": "session",
       "via": "partners",
       "dominant": true
+    },
+    "about": {
+      "type": "richtext"
     }
   }
 }
