@@ -74,6 +74,9 @@
     },
     "bio": {
       "type": "text"
+    },
+    "reads": {
+      "collection": "article"
     }
   }
 }
