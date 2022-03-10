@@ -76,6 +76,11 @@
     },
     "about": {
       "type": "richtext"
+    },
+    "packages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.package"
     }
   }
 }

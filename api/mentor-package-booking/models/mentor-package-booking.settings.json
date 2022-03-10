@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mentor_package_bookings",
+  "info": {
+    "name": "Mentor Package Booking",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "partner": {
+      "model": "partner"
+    },
+    "package": {
+      "type": "json"
+    },
+    "message": {
+      "type": "text"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}

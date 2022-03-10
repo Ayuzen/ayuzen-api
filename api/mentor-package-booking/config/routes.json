@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mentor-package-bookings",
+      "handler": "mentor-package-booking.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mentor-package-bookings/count",
+      "handler": "mentor-package-booking.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mentor-package-bookings/:id",
+      "handler": "mentor-package-booking.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mentor-package-bookings",
+      "handler": "mentor-package-booking.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mentor-package-bookings/:id",
+      "handler": "mentor-package-booking.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mentor-package-bookings/:id",
+      "handler": "mentor-package-booking.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
