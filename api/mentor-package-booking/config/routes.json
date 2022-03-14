@@ -29,7 +29,9 @@
       "path": "/mentor-package-bookings",
       "handler": "mentor-package-booking.create",
       "config": {
-        "policies": []
+        "policies": [
+          "global::rate-limit"
+        ]
       }
     },
     {
