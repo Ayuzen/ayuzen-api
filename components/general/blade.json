@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_general_blades",
+  "info": {
+    "name": "blade",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "descripyion": {
+      "type": "text"
+    },
+    "asset": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "assetOnRight": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

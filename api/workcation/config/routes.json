@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/workcation",
+      "handler": "workcation.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/workcation",
+      "handler": "workcation.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/workcation",
+      "handler": "workcation.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

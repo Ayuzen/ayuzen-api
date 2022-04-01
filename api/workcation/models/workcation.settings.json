@@ -1,0 +1,66 @@
+{
+  "kind": "singleType",
+  "collectionName": "workcations",
+  "info": {
+    "name": "Workcation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "amenities": {
+      "collection": "amenity"
+    },
+    "sections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.blade"
+    },
+    "regions": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "faqs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.faq"
+    },
+    "cover_desktop": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "cover_mobile": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
